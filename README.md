@@ -10,9 +10,9 @@ Run `npm install && npm run project` to create your project. Follow the prompts.
 
 ## Available commands
 
-`npm run project` will create a new project for you. When your project is created, the first day is automatically built and the watcher started for you to begin.
-`npm run day` will begin a new day for your project, starting a watcher to make sure your changes are hinted.
-`npm run watch` will watch your scripts and templates for changes and hint/compile them for you.
++ `npm run project` will create a new project for you. When your project is created, the first day is automatically built and the watcher started for you to begin.
++ `npm run day` will begin a new day for your project, starting a watcher to make sure your changes are hinted.
++ `npm run watch` will watch your scripts and templates for changes and hint/compile them for you.
 
 ## Coming soon
 
