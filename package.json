@@ -4,8 +4,21 @@
   "description": "Front End a Day -- a simple framework to make doing a front-end project each day easy and fun.",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "day": "node src/day.js",
+    "html": "jade tmpl/index.jade > dist/index.html",
+    "js": "jscs src/*.js dist/days/*.js && jshint src/*.js dist/days/*.js",
+    "project": "node src/project.js",
+    "watch": "parallelshell 'npm run watch:js' 'npm run watch:html'",
+    "watch:html": "watch 'npm run html' tmpl/*.jade",
+    "watch:js": "watch 'npm run js' src/*.js dist/days/*.js"
   },
   "author": "Jacob M. Roufa",
-  "license": "MIT"
+  "license": "MIT",
+  "devDependencies": {
+    "jade": "^1.11.0",
+    "jscs": "^1.13.1",
+    "jshint": "^2.8.0",
+    "parallelshell": "^1.2.0",
+    "watch": "^0.16.0"
+  }
 }
