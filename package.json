@@ -1,0 +1,11 @@
+{
+  "name": "feaday",
+  "version": "0.0.0",
+  "description": "Front End a Day -- a simple framework to make doing a front-end project each day easy and fun.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Jacob M. Roufa",
+  "license": "MIT"
+}
